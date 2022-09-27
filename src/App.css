@@ -1,0 +1,74 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://efeverde.com/wp-content/uploads/2022/01/Parque-Nacional-Los-Alerces-Patagonia-Argentina-5.jpg');
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(21, 98, 103, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(18, 130, 142, 0.7);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card__title {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+.card__subtitle {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card__icon {
+  width: 100%;
+}
+.card__second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.second__list {
+  display: grid;
+  gap: 7px;
+}
+.second__item {
+  color: #fffa;
+}
+.second__span {
+  color: aqua;
+}
+.card__temperature {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card__btn {
+  grid-column: span 2;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgb(22, 180, 180);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card__btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  transition: transform 100ms ease;
+}
