@@ -4,13 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+ 
 }
-/* .background {
+.background {
   position: absolute;
   height: 100vh;
   object-fit: cover;
-} */
+}
 .card {
   position: absolute;
   width: 100%;

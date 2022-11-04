@@ -38,7 +38,7 @@ function App() {
   
   return (
     <div className="App">
-      {/* <video src="/public/video/video-background.mp4" autoPlay muted loop className='background'></video> */}
+      <video src="/public/video/video-background.mp4" autoPlay muted loop className='background'></video>
       {
         weather ?
           <WeatherCard weather={weather} temperature={temperature} />
