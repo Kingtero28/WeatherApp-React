@@ -28,8 +28,8 @@ function App() {
       axios.get(URL)
         .then(res => {
           const celsius = (res.data.main.temp - 273.15).toFixed(0)
-          const farenheit = (celsius * 9 / 5 + 32).toFixed(0)
-          setTemperature({active: 'celsius', celsius, farenheit})
+          const fahrenheit = (celsius * 9 / 5 + 32).toFixed(0)
+          setTemperature({active: 'celsius', celsius, fahrenheit})
           setWeather(res.data)
         })
         .catch(err => console.log(err))
@@ -38,6 +38,7 @@ function App() {
   
   return (
     <div className="App">
+      <video src="/public/video/video-background.mp4" autoPlay muted loop className='background'></video>
       {
         weather ?
           <WeatherCard weather={weather} temperature={temperature} />
