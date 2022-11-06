@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       {/* <video src="../video/video-background.mp4" autoPlay muted loop className='background'></video> */}
       <video loop muted autoPlay='autoPlay'>
-        <source src='/public/video/video-background.mp4' type='video/mp4' />
+        <source src='/video/video-background.mp4' type='video/mp4' />
       </video>
       {
         weather ?
