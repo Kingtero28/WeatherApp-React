@@ -38,10 +38,7 @@ function App() {
   
   return (
     <div className="App">
-      {/* <video src="../video/video-background.mp4" autoPlay muted loop className='background'></video> */}
-      <video loop muted autoPlay='autoPlay'>
-        <source src='/video/video-background.mp4' type='video/mp4' />
-      </video>
+      <video src="/video/video-background.mp4" autoPlay muted loop playsInline className='background'></video>
       {
         weather ?
           <WeatherCard weather={weather} temperature={temperature} />
