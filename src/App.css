@@ -7,8 +7,7 @@
 }
 .background {
   position: absolute;
-  height: 100vh;
-  object-fit: cover;
+  width: 100%;
 }
 .card {
   position: absolute;
